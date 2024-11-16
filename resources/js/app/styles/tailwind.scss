@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Roboto";
+    src: url("@/assets/fonts/Roboto/subset-Roboto-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("@/assets/fonts/Roboto/subset-Roboto-Bold.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+}
+.container {
+    padding: 0 15px;
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-primary-1 border  border-primary-1  shadow-primary text-white  hover:bg-primary-2 hover:border hover:border-primary-1 sm:text-sm block mb-4 w-full rounded-lg shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0;
+    }
+    .btn-secondary {
+        @apply bg-primary-2  text-slate-950 border  border-primary-1  hover:bg-primary-1 hover:border hover:border-primary-1  hover:text-white;
+    }
+    .input-primary {
+        @apply bg-color-gray border rounded-lg text-black active:border block w-full p-2.5;
+    }
+    .btn-group {
+        @apply bg-white shadow-primary text-black  hover:bg-primary-3 hover:border-primary-3 focus:bg-primary-3 focus:border-primary-3;
+    }
+    .input-search {
+        @apply bg-white w-full h-full flex h-16 rounded-md rounded-r-none border-gray-2 hover:bg-white hover:border-primary-3 focus:bg-white focus:border-primary-3;
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d9d9d9;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #d9d9d9;
+}

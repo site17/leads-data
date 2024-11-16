@@ -1,0 +1,117 @@
+{
+  "_LogInForm.vue_vue_type_script_setup_true_lang-BZS8fEAA.js": {
+    "file": "assets/LogInForm.vue_vue_type_script_setup_true_lang-BZS8fEAA.js",
+    "name": "LogInForm.vue_vue_type_script_setup_true_lang",
+    "imports": [
+      "resources/js/app/app.ts"
+    ]
+  },
+  "_store-BzVdZrO7.js": {
+    "file": "assets/store-BzVdZrO7.js",
+    "name": "store",
+    "imports": [
+      "resources/js/app/app.ts"
+    ]
+  },
+  "resources/js/app/app.ts": {
+    "file": "assets/app-C54y0k60.js",
+    "name": "app",
+    "src": "resources/js/app/app.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/pages/main/ui/MainPage.vue",
+      "resources/js/pages/errors/404/index.ts",
+      "resources/js/pages/errors/403/index.ts",
+      "resources/js/pages/leads/LeadsAll.vue",
+      "resources/js/pages/lead/LeadCard.vue"
+    ],
+    "css": [
+      "assets/app-BDK7sksX.css"
+    ],
+    "assets": [
+      "assets/profile-uQANJNFs.jpg",
+      "assets/subset-Roboto-Regular-BHx-wm8j.woff2",
+      "assets/subset-Roboto-Bold-Bgg3gX31.woff2"
+    ]
+  },
+  "resources/js/assets/fonts/Roboto/subset-Roboto-Bold.woff2": {
+    "file": "assets/subset-Roboto-Bold-Bgg3gX31.woff2",
+    "src": "resources/js/assets/fonts/Roboto/subset-Roboto-Bold.woff2"
+  },
+  "resources/js/assets/fonts/Roboto/subset-Roboto-Regular.woff2": {
+    "file": "assets/subset-Roboto-Regular-BHx-wm8j.woff2",
+    "src": "resources/js/assets/fonts/Roboto/subset-Roboto-Regular.woff2"
+  },
+  "resources/js/assets/mdi_calendar-today-outline.svg": {
+    "file": "assets/mdi_calendar-today-outline-Cp0Mv9Uh.svg",
+    "src": "resources/js/assets/mdi_calendar-today-outline.svg"
+  },
+  "resources/js/assets/profile.jpg": {
+    "file": "assets/profile-uQANJNFs.jpg",
+    "src": "resources/js/assets/profile.jpg"
+  },
+  "resources/js/pages/errors/403/index.ts": {
+    "file": "assets/index-CZ7iUqVq.js",
+    "name": "index",
+    "src": "resources/js/pages/errors/403/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app/app.ts"
+    ],
+    "css": [
+      "assets/index-BN67pGP-.css"
+    ]
+  },
+  "resources/js/pages/errors/404/index.ts": {
+    "file": "assets/index-BPTJt3qe.js",
+    "name": "index",
+    "src": "resources/js/pages/errors/404/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app/app.ts"
+    ],
+    "css": [
+      "assets/index-DcHjUV6W.css"
+    ]
+  },
+  "resources/js/pages/lead/LeadCard.vue": {
+    "file": "assets/LeadCard-Cw_Vu-Jp.js",
+    "name": "LeadCard",
+    "src": "resources/js/pages/lead/LeadCard.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_store-BzVdZrO7.js",
+      "resources/js/app/app.ts"
+    ],
+    "css": [
+      "assets/LeadCard-RLtwVYsG.css"
+    ]
+  },
+  "resources/js/pages/leads/LeadsAll.vue": {
+    "file": "assets/LeadsAll-Haswkq9Z.js",
+    "name": "LeadsAll",
+    "src": "resources/js/pages/leads/LeadsAll.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app/app.ts",
+      "_store-BzVdZrO7.js",
+      "_LogInForm.vue_vue_type_script_setup_true_lang-BZS8fEAA.js"
+    ],
+    "css": [
+      "assets/LeadsAll-Cy_AFsnd.css"
+    ],
+    "assets": [
+      "assets/mdi_calendar-today-outline-Cp0Mv9Uh.svg"
+    ]
+  },
+  "resources/js/pages/main/ui/MainPage.vue": {
+    "file": "assets/MainPage-CFR1FYc9.js",
+    "name": "MainPage",
+    "src": "resources/js/pages/main/ui/MainPage.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_LogInForm.vue_vue_type_script_setup_true_lang-BZS8fEAA.js",
+      "resources/js/app/app.ts"
+    ]
+  }
+}
