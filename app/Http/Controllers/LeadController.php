@@ -30,12 +30,10 @@ class LeadController extends Controller
 
         // Инициализируем массив с лидами
         $leads = collect();
-        // $lead_field_ids = collect();
-
+       
 
         if ($user_rights->role_pid == 6) {
-            //Проверка на маркетолога или телемаркетолога
-            //'Utm_source'
+            
             $lead_field_ids = LeadFields::where('name', 'Utm_medium')->pluck('custom_field_id')->toArray();
             $lead_id_by_values = LeadFieldValue::whereIn('field_id', $lead_field_ids)
                 ->where('value', $user_rights->utm_medium)->pluck('lead_id')->toArray();
@@ -62,7 +60,7 @@ class LeadController extends Controller
                 return $lead;
             });
         } elseif ($user_rights->role_pid == 4) {
-            //проверка для тимлида
+            
             $team_utm_arr = userRight::where('team_leader_utm_medium', $user_rights->utm_medium)->pluck('utm_medium')->toArray();
             $lead_field_ids = LeadFields::where('name', 'Utm_medium')->pluck('custom_field_id')->toArray();
             array_push($team_utm_arr, $user_rights->utm_medium); //добавляем utm тимлида
@@ -131,18 +129,7 @@ class LeadController extends Controller
 
     public function getLeadById($lead_id)
     {
-        // Получаем лид из базы данных
-        // $leads = Lead::where('id', $lead_id)->first();
-
-        // // Преобразуем поле raw_content в строку
-        // $leads->raw_content = json_encode($leads->raw_content);
-
-        // // Возвращаем данные в формате JSON
-        // return response()->json([
-        //     'status' => 'success',
-        //     'data' => $leads,
-        // ]);
-        // Получаем лид из базы данных вместе с его контактами
+      
         $lead = Lead::with('contacts')->where('lead_id', $lead_id)->first();
 
         // Проверка на случай, если лид не найден
@@ -162,7 +149,7 @@ class LeadController extends Controller
             'data' => $lead,
         ]);
     }
-    // $lead = Lead::with('contacts')->find($leadId);
+    
     public function getLeadId($id)
     {
         // Получаем лид из базы данных
