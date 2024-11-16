@@ -52,11 +52,7 @@ class AuthController extends Controller
         }
         $user = User::where('id', $user->id)->first();
         $user_project = userRight::where('user_pid', $user->id)->first();
-        // return response()->json([
-        //     'status' => 'success',
-        //     'name' => $user->name,
-        //     'project' => $user_project->project_name,
-        // ]);
+     
         $user_data =  (object)[
             'name' => $user->name,
             'project' => $user_project->project_name,
@@ -66,12 +62,6 @@ class AuthController extends Controller
 
             'data' => $user_data // возвращаем массив статусов
         ], 200);
-        // return response()->json(
-        //     ['name' => $user->name,
-        //         'project' => $user_project->project_name,
 
-        //     ],
-        //     200
-        // );
     }
 }
